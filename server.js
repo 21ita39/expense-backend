@@ -49,7 +49,7 @@ var app = express();
 app.use(cors());
 const mongoose = require('mongoose');
 mongoose
-.connect('mongodb://127.0.0.1:27017/ExpenseTracker')
+.connect('mongodb+srv://Preethi:Sl7w70g8SGW4Su1v@cluster0.pppeqsv.mongodb.net/ExpenseTracker')
 .then(()=>console.log("Connected to MongoDB"));
 
 const expenseschema = new mongoose.Schema({
